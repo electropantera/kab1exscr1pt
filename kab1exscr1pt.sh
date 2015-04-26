@@ -20,7 +20,9 @@ echo ""
 echo "1. Update System"
 echo "2. TeamViewer 10"
 echo "3. Sopcast Player"
+echo "4. Spotify"
 
+echo ""
 echo "Enter the package name"
 read NUM
 
@@ -58,5 +60,10 @@ case $NUM in
 		make
 		make install
 		;;
-	
+	4)
+		echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/source.list
+		apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 94558F59
+		apt-get update && apt-get install spotify-client
+		;;
+
 esac

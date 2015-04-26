@@ -52,7 +52,7 @@ case $NUM in
 	3)
 		add-apt-repository ppa:venerix/pkg -y
 		apt-get update
-		apt-get install sp-auth build-essential
+		apt-get install sp-auth build-essential -y
 		wget http://sopcast-player.googlecode.com/files/sopcast-player-0.8.5.tar.gz -O /tmp/sopcastplayer.tar.gz
 		mkdir -p /tmp/sopcastplayer
 		tar zxvf /tmp/sopcastplayer.tar.gz -C /tmp/
@@ -63,7 +63,7 @@ case $NUM in
 	4)
 		echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/source.list
 		apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 94558F59
-		apt-get update && apt-get install spotify-client
+		apt-get update && apt-get install spotify-client -y
 		;;
 
 esac

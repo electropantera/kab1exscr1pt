@@ -52,7 +52,7 @@ case $NUM in
 	3)
 		add-apt-repository ppa:venerix/pkg -y
 		apt-get update
-		apt-get install sp-auth build-essential -y
+		apt-get install sp-auth build-essential python-glade2 -y
 		wget http://sopcast-player.googlecode.com/files/sopcast-player-0.8.5.tar.gz -O /tmp/sopcastplayer.tar.gz
 		mkdir -p /tmp/sopcastplayer
 		tar zxvf /tmp/sopcastplayer.tar.gz -C /tmp/

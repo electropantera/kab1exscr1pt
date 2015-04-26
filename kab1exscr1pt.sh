@@ -46,7 +46,7 @@ case $NUM in
 		apt-get update >> /var/log/kab1exscr1pt/teamviewerinstall.log 
 		echo "Installing Teamviewer..."
 		dpkg -i /tmp/teamviewer/teamviewer.dpkg  
-		apt-get -f install  
+		apt-get -f install -y 
 	;;
 
 	3)

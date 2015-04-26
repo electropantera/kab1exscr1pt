@@ -45,8 +45,8 @@ case $NUM in
 		dpkg --add-architecture i386  >> /var/log/kab1exscr1pt/teamviewerinstall.log 
 		apt-get update >> /var/log/kab1exscr1pt/teamviewerinstall.log 
 		echo "Installing Teamviewer..."
-		dpkg -i /tmp/teamviewer/teamviewer.dpkg  >> /var/log/kab1exscr1pt/teamviewerinstall.log 
-		apt-get -f install  >> /var/log/kab1exscr1pt/teamviewerinstall.log 
+		dpkg -i /tmp/teamviewer/teamviewer.dpkg  
+		apt-get -f install  
 	;;
 
 	3)

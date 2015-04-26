@@ -4,6 +4,13 @@
 
 # Script collection to help with installation and deployment of software packages
 
+
+if [ "$(id -u)" != "0" ]; then
+	echo "You need to execute this tool as root. Try with sudo ./kab1exscr1pt"
+	exit 1
+fi
+
+
 clear
 sudo mkdir -p /var/log/kab1exscr1pt
 echo "kabl1exscr1pt v.0.1 for Debian/Ubuntu"

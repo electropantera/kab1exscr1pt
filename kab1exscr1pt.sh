@@ -18,9 +18,8 @@ echo ""
 echo "Select software package to install"
 echo ""
 echo "1. Update System"
-echo ""
 echo "2. TeamViewer 10"
-
+echo "3. Sopcast Player"
 
 echo "Enter the package name"
 read NUM
@@ -32,9 +31,9 @@ case $NUM in
 	1)
 		echo ""
 		echo "Updating package list..."
-		apt-get update >> /var/log/kab1exscr1pt/updatesystem.log
+		apt-get update 
 		echo "Updating system...Please wait..."
-		apt-get dist-upgrade -y >> /var/log/kab1exscr1pt/updatesystem.log
+		apt-get dist-upgrade -y 
 		;;
 	2)
 		echo "Downloading TeamViewer..."
@@ -48,5 +47,16 @@ case $NUM in
 		apt-get -f install  >> /var/log/kab1exscr1pt/teamviewerinstall.log 
 	;;
 
-
+	3)
+		add-apt-repository ppa:venerix/pkg -y
+		apt-get update
+		apt-get install install sp-auth
+		wget http://sopcast-player.googlecode.com/files/sopcast-player-0.8.5.tar.gz -O /tmp/sopcastplayer.tar.gz
+		mkdir -p /tmp/sopcastplayer
+		tar zxvf /tmp/sopcastplayer.tar.gz -C /tmp/
+		cd /tmp/sopcast-player
+		make
+		make install
+		;;
+	
 esac

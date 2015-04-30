@@ -13,7 +13,7 @@ fi
 
 clear
 sudo mkdir -p /var/log/kab1exscr1pt
-echo "kab1exscr1pt v.0.3 for Debian/Ubuntu"
+echo "kab1exscr1pt v.0.3 for Ubuntu 14.04 LTS"
 echo ""
 echo "Select software package to install"
 echo ""

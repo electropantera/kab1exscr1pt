@@ -1,5 +1,7 @@
 # kab1exscr1pt
 
+# Script collection to help with installation and deployment of software packages
+
 
 Install:
 

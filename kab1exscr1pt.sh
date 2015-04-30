@@ -6,7 +6,8 @@
 
 
 if [ "$(id -u)" != "0" ]; then
-	echo "You need to execute this tool as root. Try with sudo ./kab1exscr1pt"
+	echo "You need to execute this tool as root. Try with sudo kab1exscr1pt"
+	echo " Tienes que ejecutar esta herramienta como root. Pruebe otra vez con sudo kab1exscr1pt"
 	exit 1
 fi
 
@@ -15,7 +16,7 @@ clear
 sudo mkdir -p /var/log/kab1exscr1pt
 echo "kab1exscr1pt v.0.3 for Ubuntu 14.04 LTS"
 echo ""
-echo "Select software package to install"
+echo "Select software package to install / Seleccione software para instalar"
 echo ""
 echo "1. Update System"
 echo "2. TeamViewer 10"

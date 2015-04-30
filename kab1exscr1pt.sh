@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# kab1exscr1pt v.0.2
+# kab1exscr1pt v.0.3
 
 # Script collection to help with installation and deployment of software packages
 
@@ -13,7 +13,7 @@ fi
 
 clear
 sudo mkdir -p /var/log/kab1exscr1pt
-echo "kab1exscr1pt v.0.2 for Debian/Ubuntu"
+echo "kab1exscr1pt v.0.3 for Debian/Ubuntu"
 echo ""
 echo "Select software package to install"
 echo ""

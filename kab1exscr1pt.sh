@@ -68,7 +68,7 @@ case $NUM in
 		;;
 
 	5)
-		echo ‘deb http://repo.acestream.org/ubuntu/ raring main’ | tee /etc/apt/sources.list.d/acestream.list 
+		echo 'deb http://repo.acestream.org/ubuntu/ raring main' | tee /etc/apt/sources.list.d/acestream.list 
 		wget -O – http://repo.acestream.org/keys/acestream.public.key | apt-key add 
 		apt-get update
 		wget https://dl.dropboxusercontent.com/u/6545640/Ace-stream-U14.04.tar -O /tmp/acestream.tar

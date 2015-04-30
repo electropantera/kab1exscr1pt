@@ -22,6 +22,7 @@ echo "2. TeamViewer 10"
 echo "3. Sopcast Player"
 echo "4. Spotify"
 echo "5. AceStream"
+echo "6. Dropbox"
 
 echo ""
 echo "Enter the package name"
@@ -74,7 +75,10 @@ case $NUM in
 		apt-get install acestream-full -y
 		;;
 		
-		
-		
+	6)
+		wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb -O /tmp/dropbox.deb
+		dpkg -i /tmp/dropbox.deb
+		apt-get -f install
+		;;
 		
 esac

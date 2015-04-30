@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# kab1exscr1pt v.0.1
+# kab1exscr1pt v.0.2
 
 # Script collection to help with installation and deployment of software packages
 

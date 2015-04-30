@@ -62,16 +62,16 @@ case $NUM in
 		make install
 		;;
 	4)
-		echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/source.list
+		echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list
 		apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 94558F59
 		apt-get update && apt-get install spotify-client -y
 		;;
 
 	5)
-		echo "deb http://repo.acestream.org/ubuntu/ trusty main" >> /etc/apt/source.list
+		echo "deb http://repo.acestream.org/ubuntu/ trusty main" >> /etc/apt/sources.list
 		wget -O - http://repo.acestream.org/keys/acestream.public.key | sudo apt-key add -
 		apt-get update
-		apt-get install acestream-full
+		apt-get install acestream-full -y
 		;;
 		
 		

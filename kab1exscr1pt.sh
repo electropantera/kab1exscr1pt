@@ -79,11 +79,11 @@ case $NUM in
 	6)
 		wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb -O /tmp/dropbox.deb
 		dpkg -i /tmp/dropbox.deb
-		apt-get -f install
+		apt-get -f install -y
 		;;
 	7)
 		wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O /tmp/chrome.deb
 		dpkg -i /tmp/chrome.deb
-		apt-get -f install
+		apt-get -f install -y
 		;;
 esac

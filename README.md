@@ -11,3 +11,10 @@ sudo wget https://dl.dropboxusercontent.com/u/6545640/kab1exscr1pt.sh -O /usr/bi
 Run:
 
 sudo kab1exscr1pt
+
+
+
+
+Disclaimer:
+
+The author of the software takes no responsibility for damage caused by downloading, installing or use of this software

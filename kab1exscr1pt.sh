@@ -23,6 +23,7 @@ echo "3. Sopcast Player"
 echo "4. Spotify"
 echo "5. AceStream"
 echo "6. Dropbox"
+echo "7. Google Chrome"
 
 echo ""
 echo "Enter the package name"
@@ -80,5 +81,9 @@ case $NUM in
 		dpkg -i /tmp/dropbox.deb
 		apt-get -f install
 		;;
-		
+	7)
+		wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O /tmp/chrome.deb
+		dpkg -i /tmp/chrome.deb
+		apt-get -f install
+		;;
 esac

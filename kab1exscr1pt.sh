@@ -25,9 +25,9 @@ echo "4. Spotify"
 echo "5. AceStream"
 echo "6. Dropbox"
 echo "7. Google Chrome"
-
+echo "8. Hamachi"
 echo ""
-echo "Enter the package name"
+echo "Enter the package number"
 read NUM
 
 
@@ -85,6 +85,11 @@ case $NUM in
 	7)
 		wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O /tmp/chrome.deb
 		dpkg -i /tmp/chrome.deb
+		apt-get -f install -y
+		;;
+	8)
+		wget https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb -O /tmp/hamachi.deb
+		dpkg -i /tmp/hamachi.deb
 		apt-get -f install -y
 		;;
 esac

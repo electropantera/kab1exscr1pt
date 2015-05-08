@@ -25,7 +25,7 @@ echo "4. Spotify"
 echo "5. AceStream"
 echo "6. Dropbox"
 echo "7. Google Chrome"
-echo "8. Hamachi"
+echo "8. Hamachi + Hagichi front end"
 echo ""
 echo "Enter the package number"
 read NUM
@@ -51,8 +51,7 @@ case $NUM in
 		echo "Installing Teamviewer..."
 		dpkg -i /tmp/teamviewer/teamviewer.dpkg  
 		apt-get -f install -y 
-	;;
-
+		;;
 	3)
 		add-apt-repository ppa:venerix/pkg -y
 		apt-get update
@@ -91,5 +90,10 @@ case $NUM in
 		wget https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb -O /tmp/hamachi.deb
 		dpkg -i /tmp/hamachi.deb
 		apt-get -f install -y
+		add-apt-repository ppa:webupd8team/haguichi
+		apt-get update
+		apt-get install haguichi haguichi-appindicator -y
+		apt-get -f install -y
 		;;
+		
 esac

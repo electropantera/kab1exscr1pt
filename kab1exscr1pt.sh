@@ -26,6 +26,7 @@ echo "5. AceStream"
 echo "6. Dropbox"
 echo "7. Google Chrome"
 echo "8. Hamachi + Hagichi front end"
+echo "9. Install SSH Server"
 echo ""
 echo "Enter the package number"
 read NUM
@@ -95,5 +96,8 @@ case $NUM in
 		apt-get install haguichi haguichi-appindicator -y
 		apt-get -f install -y
 		;;
-		
+	9:
+		apt-get update
+		apt-get install ssh -y
+		;;
 esac

@@ -96,7 +96,7 @@ case $NUM in
 		apt-get install haguichi haguichi-appindicator -y
 		apt-get -f install -y
 		;;
-	9:
+	9)
 		apt-get update
 		apt-get install ssh -y
 		;;

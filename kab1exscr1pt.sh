@@ -27,6 +27,7 @@ echo "6. Dropbox"
 echo "7. Google Chrome"
 echo "8. Hamachi + Hagichi front end"
 echo "9. Install SSH Server"
+echo "10. OpenRA (Red Alert open source)"
 echo ""
 echo "Enter the package number"
 read NUM
@@ -99,5 +100,11 @@ case $NUM in
 	9)
 		apt-get update
 		apt-get install ssh -y
+		;;
+	10)
+		apt-get update
+		wget https://github.com/OpenRA/OpenRA/releases/download/release-20150614/openra_release.20150614_all.deb -O /tmp/redalert.deb
+		dpkg -i /tmp/redalert.deb
+		apt-get -f install -y
 		;;
 esac

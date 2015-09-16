@@ -115,7 +115,7 @@ case $NUM in
 		apt-get -f install
 		wget https://www.dropbox.com/s/o1x0ac682x89znn/ufo.zip?dl=0 -O /tmp/ufo.zip
 		unzip /tmp/ufo.zip -d /tmp/
-		cp /tmp/x-com-ufo-defense/* /usr/share/openxcom/data/ -Rv
+		mv /tmp/x-com-ufo-defense/UFO/* /usr/share/openxcom/data/ 
 		;;
 		
 esac

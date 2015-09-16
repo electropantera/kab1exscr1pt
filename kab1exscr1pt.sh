@@ -28,6 +28,7 @@ echo "7. Google Chrome"
 echo "8. Hamachi + Hagichi front end"
 echo "9. Install SSH Server"
 echo "10. OpenRA (Red Alert open source)"
+echo "11. Open X-COM"
 echo ""
 echo "Enter the package number"
 read NUM
@@ -107,4 +108,11 @@ case $NUM in
 		dpkg -i /tmp/redalert.deb
 		apt-get -f install -y
 		;;
+	11)
+		add-apt-repository ppa:knapsu/openxcom -y
+		apt-get update
+		apt-get install openxcom -y
+		apt-get -f install
+		;;
+		
 esac

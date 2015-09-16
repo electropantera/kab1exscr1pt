@@ -113,7 +113,7 @@ case $NUM in
 		apt-get update
 		apt-get install openxcom -y
 		apt-get -f install
-		wget http://www.myabandonware.com/media/files/games/x/x-com-ufo-defense_dos_04cq.zip -O /tmp/ufo.zip
+		wget https://www.dropbox.com/s/o1x0ac682x89znn/ufo.zip?dl=0 -O /tmp/ufo.zip
 		unzip /tmp/ufo.zip -d /tmp/
 		mv /tmp/x-com-ufo-defense/* /usr/share/openxcom/data/
 		;;

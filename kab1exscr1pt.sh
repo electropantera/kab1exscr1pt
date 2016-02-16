@@ -90,7 +90,7 @@ case $NUM in
 		apt-get -f install -y
 		;;
 	8)
-		wget https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb -O /tmp/hamachi.deb
+		wget https://dl.dropboxusercontent.com/u/6545640/logmein-hamachi_2.1.0.139-1_amd64.deb -O /tmp/hamachi.deb
 		dpkg -i /tmp/hamachi.deb
 		apt-get -f install -y
 		add-apt-repository ppa:webupd8team/haguichi -y
